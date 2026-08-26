@@ -1,0 +1,2 @@
+:HL["/eclat-maison/_next/static/chunks/15jx-63nyv6n5.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"craft","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"size","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"d6nIjpyvS3WTNlqNpK5xl"}

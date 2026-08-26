@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[47257,["/eclat-maison/_next/static/chunks/0hiiwljd8f446.js","/eclat-maison/_next/static/chunks/0k6kr~ze-.qya.js"],"ClientPageRoot"]
+3:I[31713,["/eclat-maison/_next/static/chunks/0hiiwljd8f446.js","/eclat-maison/_next/static/chunks/0k6kr~ze-.qya.js","/eclat-maison/_next/static/chunks/0rtz59gw0qwpy.js"],"default"]
+6:I[97367,["/eclat-maison/_next/static/chunks/0hiiwljd8f446.js","/eclat-maison/_next/static/chunks/0k6kr~ze-.qya.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/eclat-maison/_next/static/chunks/0rtz59gw0qwpy.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"d6nIjpyvS3WTNlqNpK5xl"}
+4:{}
+5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
+8:null

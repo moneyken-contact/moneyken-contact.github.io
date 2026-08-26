@@ -11,6 +11,7 @@ import {
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 
 const easing = [0.16, 1, 0.3, 1] as const;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
   return (
@@ -46,7 +47,7 @@ function TiltProduct() {
         }}
         onPointerLeave={() => { rotateX.set(0); rotateY.set(0); }}
       >
-        <img src="/media/product.webp" alt="Керамическая чашка кофе Aurelia" loading="lazy" decoding="async" />
+        <img src={`${basePath}/media/product.webp`} alt="Керамическая чашка кофе Aurelia" loading="lazy" decoding="async" />
         <figcaption>Фильтр · 240 мл · 93°</figcaption>
       </motion.figure>
     </div>
@@ -64,7 +65,7 @@ function SmokeOrigin() {
       <motion.img
         className="origin-smoke"
         style={{ y: smokeY, scale: smokeScale }}
-        src="/media/smoke.webp"
+        src={`${basePath}/media/smoke.webp`}
         alt=""
         loading="lazy"
         decoding="async"
@@ -100,7 +101,7 @@ function StorySection() {
       <motion.img
         className="story-image"
         style={{ scale: imageScale }}
-        src="/media/story.webp"
+        src={`${basePath}/media/story.webp`}
         alt="Чашка кофе, книги и свежеобжаренные зёрна"
         loading="lazy"
         decoding="async"
@@ -176,8 +177,8 @@ export default function Home() {
         onPointerLeave={() => { pointerX.set(0); pointerY.set(0); }}
       >
         <motion.div className="hero-media" style={{ x: mediaX, y: mediaY }} aria-hidden="true">
-          <video ref={videoRef} autoPlay muted loop playsInline preload="metadata" poster="/media/hero-poster.webp">
-            <source src="/media/hero.mp4" type="video/mp4" />
+          <video ref={videoRef} autoPlay muted loop playsInline preload="metadata" poster={`${basePath}/media/hero-poster.webp`}>
+            <source src={`${basePath}/media/hero.mp4`} type="video/mp4" />
           </video>
         </motion.div>
         <div className="hero-shade" aria-hidden="true" />
@@ -211,7 +212,7 @@ export default function Home() {
         </div>
         <div className="philosophy-visual page-grid">
           <motion.img
-            src="/media/philosophy.webp"
+            src={`${basePath}/media/philosophy.webp`}
             alt="Четыре принципа кофе: зерно, огонь, заваривание и происхождение"
             loading="lazy"
             decoding="async"
@@ -250,6 +251,7 @@ export default function Home() {
       <section className="immersive-section">
         <motion.div
           className="pattern-layer"
+          style={{ backgroundImage: `url('${basePath}/media/bean-pattern.webp')` }}
           initial={{ backgroundPosition: '50% 0%' }}
           whileInView={{ backgroundPosition: '50% 22%' }}
           viewport={{ amount: .15 }}
@@ -282,7 +284,7 @@ export default function Home() {
       <StorySection />
 
       <section id="final" className="final-section">
-        <div className="final-grain" />
+        <div className="final-grain" style={{ backgroundImage: `url('${basePath}/media/bean-pattern.webp')` }} />
         <Reveal className="final-copy">
           <p className="eyebrow">Ваша чашка уже близко</p>
           <h2>Оставьте место<br />для <em>глубины.</em></h2>
