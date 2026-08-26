@@ -1,0 +1,10 @@
+# Generated files from the Aurelia Coffee application
+Aurelia-Coffee-Site/node_modules/
+Aurelia-Coffee-Site/.next/
+Aurelia-Coffee-Site/dist/
+Aurelia-Coffee-Site/.wrangler/
+
+# Local tooling and operating-system files
+.DS_Store
+Thumbs.db
+

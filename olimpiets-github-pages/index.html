@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЖК «Олимпиец» — квартиры в Могилёве</title>
+  <meta name="description" content="Квартиры в новом доме по адресу ул. 30 лет Победы, 32Б в Могилёве.">
+  <meta property="og:title" content="ЖК «Олимпиец» — квартиры в Могилёве">
+  <meta property="og:description" content="Современный дом на ул. 30 лет Победы, 32Б. Фасады, окружение и планировки квартир.">
+  <meta property="og:image" content="./og.png">
+  <link rel="icon" href="./favicon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+<main>
+  <section class="hero" id="top">
+    <img class="heroImage isVisible" data-scene="0" src="./images/weather/night.jpeg" alt="ЖК «Олимпиец»: архитектурная подсветка">
+    <img class="heroImage" data-scene="1" src="./images/weather/day.jpeg" alt="ЖК «Олимпиец»: солнечный день">
+    <img class="heroImage" data-scene="2" src="./images/weather/autumn.jpeg" alt="ЖК «Олимпиец»: осень">
+    <img class="heroImage" data-scene="3" src="./images/weather/winter.jpeg" alt="ЖК «Олимпиец»: зима">
+    <img class="heroImage" data-scene="4" src="./images/weather/rain.jpeg" alt="ЖК «Олимпиец»: дождь">
+    <div class="heroShade"></div>
+    <header class="header">
+      <a class="brand" href="#top" aria-label="Олимпиец — главная"><span class="brandMark">О</span><span>ОЛИМПИЕЦ</span></a>
+      <nav aria-label="Главная навигация"><a href="#gallery">Дом</a><a href="#plans">Планировки</a><a href="#location">Расположение</a></nav>
+      <a class="headerCta" href="#contact">Выбрать квартиру</a>
+    </header>
+    <section class="heroContent">
+      <p class="eyebrow"><span></span> Могилёв · новый дом</p>
+      <h1>Жить красиво.<br>Каждый день.</h1>
+      <p class="lead">Квартиры в ЖК «Олимпиец» по адресу<br>ул. 30 лет Победы, 32Б</p>
+      <a class="primaryButton" href="#plans">Смотреть планировки <span>↗</span></a>
+    </section>
+    <div class="weatherPicker" role="tablist" aria-label="Время суток и погода">
+      <button role="tab" aria-selected="true" data-scene-button="0"><i style="background-image:url('./images/weather/night.jpeg')"></i><span>Ночь</span></button>
+      <button role="tab" aria-selected="false" data-scene-button="1"><i style="background-image:url('./images/weather/day.jpeg')"></i><span>День</span></button>
+      <button role="tab" aria-selected="false" data-scene-button="2"><i style="background-image:url('./images/weather/autumn.jpeg')"></i><span>Осень</span></button>
+      <button role="tab" aria-selected="false" data-scene-button="3"><i style="background-image:url('./images/weather/winter.jpeg')"></i><span>Зима</span></button>
+      <button role="tab" aria-selected="false" data-scene-button="4"><i style="background-image:url('./images/weather/rain.jpeg')"></i><span>Дождь</span></button>
+    </div>
+    <div class="heroMeta"><span>53°55′ с. ш.</span><span class="line"></span><span>30°20′ в. д.</span></div>
+    <div class="scrollHint"><span>Листайте</span><i></i></div>
+  </section>
+
+  <section class="manifest sectionPad">
+    <p class="sectionKicker">01 · О проекте</p>
+    <div class="manifestGrid">
+      <h2>Дом, который<br><em>выбирает свет</em></h2>
+      <div><p>Десятиэтажный дом ЖК «Олимпиец» — современная архитектура с панорамным остеклением входных групп и выразительной подсветкой фасада.</p><a class="textLink" href="#gallery">Рассмотреть со всех сторон <span>→</span></a></div>
+    </div>
+    <div class="facts" aria-label="Характеристики дома">
+      <article><strong>10</strong><span>этажей</span></article><article><strong>89</strong><span>квартир в доме</span></article><article><strong>1–3</strong><span>комнаты</span></article><article><strong>41–89</strong><span>м² площадь</span></article>
+    </div>
+  </section>
+
+  <section class="angleSection sectionPad" id="gallery">
+    <div class="sectionHeading"><div><p class="sectionKicker">02 · Архитектура</p><h2>Взгляд<br><em>с высоты</em></h2></div><p>Поверните сцену стрелками или проведите курсором по изображению — фасад оживает в пространстве.</p></div>
+    <div class="angleStage">
+      <figure class="angleCard active" data-angle="0" style="--offset:0"><img src="./images/angles/angle-1.png" alt="С высоты: дом и благоустройство"><figcaption><span>01</span><strong>С высоты</strong><small>Дом и благоустройство</small></figcaption></figure>
+      <figure class="angleCard" data-angle="1" style="--offset:1"><img src="./images/angles/angle-2.png" alt="Северный фасад: окружение и парковка"><figcaption><span>02</span><strong>Северный фасад</strong><small>Окружение и парковка</small></figcaption></figure>
+      <figure class="angleCard" data-angle="2" style="--offset:2"><img src="./images/angles/angle-3.png" alt="Двор: вид со стороны зелёной зоны"><figcaption><span>03</span><strong>Двор</strong><small>Вид со стороны зелёной зоны</small></figcaption></figure>
+      <div class="angleControls"><button data-angle-prev aria-label="Предыдущий ракурс">←</button><span data-angle-count>01 / 03</span><button data-angle-next aria-label="Следующий ракурс">→</button></div>
+    </div>
+  </section>
+
+  <section class="plans sectionPad" id="plans">
+    <div class="sectionHeading dark"><div><p class="sectionKicker">03 · Планировки</p><h2>Пространство<br><em>для вашей жизни</em></h2></div><p>Выберите количество комнат, чтобы увидеть диапазон площадей и подробный план типового этажа.</p></div>
+    <div class="planTabs" role="tablist" aria-label="Количество комнат">
+      <button role="tab" aria-selected="true" data-rooms="1"><span>01</span>комната</button>
+      <button role="tab" aria-selected="false" data-rooms="2"><span>02</span>комнаты</button>
+      <button role="tab" aria-selected="false" data-rooms="3"><span>03</span>комнаты</button>
+    </div>
+    <div class="planShowcase">
+      <div class="planInfo"><p class="miniLabel">Доступные варианты</p><h3 data-plan-title>1-комнатные</h3><strong data-plan-range>41,47–46,19 м²</strong><div class="areaChips" data-plan-areas></div><button class="darkButton" data-plan-open>Открыть план этажа <span>↗</span></button><small>Площади указаны по проектному буклету дома №3. Наличие и параметры уточняются у отдела продаж.</small></div>
+      <button class="planImage" data-plan-open aria-label="Увеличить планировку"><img data-plan-image src="./images/plans/plan-5.jpg" alt="План этажа"><span>Увеличить +</span></button>
+    </div>
+  </section>
+
+  <section class="location sectionPad" id="location">
+    <div class="locationImage"><img src="./images/plans/plan-3.jpg" alt="Схема расположения домов ЖК «Олимпиец»"></div>
+    <div class="locationCopy"><p class="sectionKicker">04 · Расположение</p><h2>Всё рядом.<br><em>И всё по пути.</em></h2><p>Обжитой район Могилёва: повседневные маршруты уже сложились, а важные места находятся рядом с домом.</p><ul><li><span>01</span>Детский сад №82</li><li><span>02</span>Школа №35 и лицей №1</li><li><span>03</span>Магазины и мини-рынок</li><li><span>04</span>СК «Олимпиец»</li></ul><a class="textLink" href="https://yandex.by/maps/?text=%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%91%D0%B2%2C%20%D1%83%D0%BB.%2030%20%D0%BB%D0%B5%D1%82%20%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D1%8B%2C%2032%D0%91" target="_blank" rel="noreferrer">Открыть на карте <span>↗</span></a></div>
+  </section>
+
+  <section class="contact sectionPad" id="contact">
+    <div class="contactIntro"><p class="sectionKicker">05 · Выбор квартиры</p><h2>Здесь начинается<br><em>ваш новый адрес</em></h2><p>Оставьте контакты — специалист свяжется с вами, расскажет об актуальном наличии и поможет выбрать планировку.</p></div>
+    <form data-contact-form><label><span>Ваше имя</span><input name="name" required placeholder="Александр"></label><label><span>Телефон</span><input name="phone" required type="tel" placeholder="+375 __ ___-__-__"></label><label><span>Что интересует</span><select name="rooms"><option>1-комнатная квартира</option><option>2-комнатная квартира</option><option>3-комнатная квартира</option></select></label><button class="primaryButton" type="submit">Получить консультацию <span>→</span></button><small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</small></form>
+    <div class="success" data-success hidden><span>✓</span><h3>Заявка принята</h3><p>Спасибо! Для получения заявок подключите форму к почте или CRM.</p><button data-form-reset>Отправить ещё одну</button></div>
+  </section>
+
+  <footer><a class="brand" href="#top"><span class="brandMark">О</span><span>ОЛИМПИЕЦ</span></a><p>Квартиры в Могилёве<br>ул. 30 лет Победы, 32Б</p><div><a href="#gallery">Дом</a><a href="#plans">Планировки</a><a href="#location">Район</a></div><small>© 2026 · ЖК «Олимпиец»</small></footer>
+</main>
+
+<div class="modal" data-modal role="dialog" aria-modal="true" aria-label="План типового этажа" hidden><button class="modalClose" data-modal-close aria-label="Закрыть">×</button><img data-modal-image src="./images/plans/plan-5.jpg" alt="Увеличенный план типового этажа"></div>
+</body>
+</html>
