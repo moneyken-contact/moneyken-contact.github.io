@@ -57,7 +57,11 @@ modal.addEventListener('click', (event) => { if (event.target === modal) closeMo
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !modal.hidden) closeModal(); });
 
 const form = document.querySelector('[data-contact-form]');
-const success = document.querySelector('[data-success]');
-form.addEventListener('submit', (event) => { event.preventDefault(); form.hidden = true; success.hidden = false; });
-document.querySelector('[data-form-reset]').addEventListener('click', () => { form.reset(); form.hidden = false; success.hidden = true; });
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const data = new FormData(form);
+  const subject = encodeURIComponent('Заявка с сайта ЖК «Олимпиец»');
+  const body = encodeURIComponent(`Имя: ${data.get('name') || ''}\nТелефон: ${data.get('phone') || ''}\nИнтересует: ${data.get('rooms') || ''}`);
+  window.location.href = `mailto:timoffi945@gmail.com?subject=${subject}&body=${body}`;
+});
 renderPlan(1);
