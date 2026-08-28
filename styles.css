@@ -1087,6 +1087,61 @@ img {
   letter-spacing: 0.08em;
 }
 
+.why-me {
+  display: block;
+  width: min(100%, 88rem);
+  margin: 0 auto;
+  padding-right: clamp(2rem, 5vw, 5rem);
+  padding-left: clamp(2rem, 5vw, 5rem);
+  border-top: 1px solid rgba(11, 13, 20, 0.12);
+}
+
+.why-me-heading {
+  margin-bottom: clamp(3.5rem, 7vw, 7rem);
+  text-align: center;
+}
+
+.why-me-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(3.2rem, 7vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -0.075em;
+  line-height: 0.88;
+}
+
+.why-me-content {
+  width: min(100%, 55rem);
+  margin: 0 auto;
+}
+
+.why-me-item + .why-me-item {
+  margin-top: clamp(2.4rem, 5vw, 4rem);
+}
+
+.why-me-item h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.25vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.why-me-item p {
+  margin: 0.75rem 0 0;
+  font-size: clamp(1rem, 1.25vw, 1.14rem);
+  line-height: 1.65;
+}
+
+.why-me-item .price-promise {
+  margin-top: 0.75rem;
+}
+
+.price-promise strong,
+.price-promise em {
+  font-weight: 800;
+}
+
 .contacts {
   grid-template-columns: minmax(0, 1.35fr) minmax(19rem, 0.65fr);
   align-items: stretch;
@@ -1457,7 +1512,8 @@ a.social-pill:focus-visible {
   }
 
   .section,
-  .about {
+  .about,
+  .why-me {
     padding: 5rem 1.25rem;
   }
 
@@ -1515,6 +1571,10 @@ a.social-pill:focus-visible {
   .small-orders-grid,
   .my-projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .why-me-heading h2 {
+    font-size: clamp(2.65rem, 13vw, 4rem);
   }
 
   .large-order-card {
