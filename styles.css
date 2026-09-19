@@ -1022,6 +1022,14 @@ img {
   object-position: 43% center;
 }
 
+.project-card-mesave > img {
+  object-position: center;
+}
+
+.project-status-active i {
+  background: #35b9ff;
+}
+
 .project-card-shade {
   z-index: -1;
   background: linear-gradient(180deg, rgba(4, 12, 24, 0.06) 15%, rgba(4, 12, 24, 0.92) 100%);
